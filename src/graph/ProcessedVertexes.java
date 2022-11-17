@@ -6,7 +6,7 @@ public interface ProcessedVertexes {
 	public void marquer_Sommet(Vertex sommet);
 	
 	//cette methode permet de verifier si un sommet est deja marque
-	public void sommetExist(Vertex sommet);
+	public boolean sommetExist(Vertex sommet);
 
 	
 	

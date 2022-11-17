@@ -1,19 +1,36 @@
 package graph;
 
 public class Dijkstra {
-//	private Graph graph;
-//	private Vertex startVertex;
-//	private Vertex endVertex;
-//	private ProcessedVertexes ProcessedVertexes;
-//	private MinDistance minDistance;
-//	private Distance distance;
 	
-	public ShortestPaths dijkstra (Graph graph, Vertex startVertex, Vertex endVertex,
-									ProcessedVertexes processedVertexes, MinDistance minDistance, Distance distance,
-									ShortestPaths shortestPaths)
+	public static ShortestPaths dijkstra (  Graph graph, 
+										    Vertex startVertex, 
+										    Vertex endVertex,
+										    ProcessedVertexes processedVertexes, 
+										    MinDistance minDistance, 
+										    Distance distance,
+										    ShortestPaths shortestPaths)
 	{
+//		Vertex pivot = new Vertex();
+//		
+//		processedVertexes.marquer_Sommet(startVertex);
+//		minDistance.setMinDistance(startVertex, 0);
+//		
+//		for(;;)
+//		{
+//			
+//		}
+//		
+//		while(processedVertexes.sommetExist(endVertex)==false)
+//		{
+//			
+//		}
+//		
 		return null;
 	}
 	
-
+	
+	public static ShortestPaths dijkstra(Graph graph, Vertex startVertex, Vertex endVertex)
+	{
+		return null;
+	}
 }

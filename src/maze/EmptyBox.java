@@ -1,10 +1,10 @@
-package Maze;
+package maze;
 
 import java.util.List;
 
 import graph.Vertex;
 
-public class WallBox extends MazeBox{
+public class EmptyBox extends MazeBox{
 
 	@Override
 	public List<Vertex> getSuccesseur() {
@@ -24,7 +24,15 @@ public class WallBox extends MazeBox{
 		
 	}
 
+	public EmptyBox(int indexLine, int indexRow, Maze labyrinthe) {
+		super(indexLine,indexRow,labyrinthe);
+	}
+	
+	public String getBoxSymbol()
+	{
+		return "E";
+	}
 
 	
-
+	
 }

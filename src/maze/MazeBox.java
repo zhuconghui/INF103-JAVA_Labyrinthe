@@ -1,12 +1,20 @@
-package Maze;
+package maze;
 
 public abstract class MazeBox implements graph.Vertex{
 	
 	private int indexLine;
 	private int indexRow;
-	private int refLabyrinthe;
+	private Maze refLabyrinthe;
 	private boolean passable;
 	
+	
+	public MazeBox(int indexLine, int indexRow, Maze refLabyrinthe) {
+		super();
+		this.indexLine = indexLine;
+		this.indexRow = indexRow;
+		this.refLabyrinthe = refLabyrinthe;
+	}
+
 	public boolean isPassable() {
 		return passable;
 	}
@@ -18,6 +26,7 @@ public abstract class MazeBox implements graph.Vertex{
 	public String getLabel() {
 		return "(" + indexLine + "," + indexRow + ")";
 	}
+	
 
 	public int getIndexLine() {
 		return indexLine;
@@ -35,11 +44,11 @@ public abstract class MazeBox implements graph.Vertex{
 		this.indexRow = indexRow;
 	}
 
-	public int getRefLabyrinthe() {
+	public Maze getRefLabyrinthe() {
 		return refLabyrinthe;
 	}
 
-	public void setRefLabyrinthe(int refLabyrinthe) {
+	public void setRefLabyrinthe(Maze refLabyrinthe) {
 		this.refLabyrinthe = refLabyrinthe;
 	}
 	
